@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
 
-  workflow_dispatch: {}
+  workflow_dispatch: { }
 
 permissions:
   contents: read
@@ -17,6 +17,7 @@ concurrency:
 
 jobs:
   deploy:
+    name: Deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -24,26 +25,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          
+
       - name: Install dependencies
-        run: yarn install
-        
+        run: yarn ci
+
       - name: Build
         run: yarn build
-        
+
       - name: Setup Pages
         uses: actions/configure-pages@v1
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ".dist/"
-          
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@main
