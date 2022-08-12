@@ -38,12 +38,61 @@
                     ...
                 </p>
             </section>
+            <div class="m-divider from-amber-200 to-yellow-400"></div>
+            <section>
+                <h2>Skills</h2>
+                <p>
+                    ...
+                </p>
+            </section>
+            <div class="m-divider from-amber-200 to-yellow-400"></div>
+            <section>
+                <h2>Experience</h2>
+                <p>
+                    ...
+                </p>
+            </section>
+            <div class="m-divider from-amber-200 to-yellow-400"></div>
+            <section>
+                <h2>Education</h2>
+                <p>
+                    ...
+                </p>
+            </section>
+            <div class="m-divider from-amber-200 to-yellow-400"></div>
+            <section>
+                <h2>Courses & Certification</h2>
+                <p>
+                    ...
+                </p>
+            </section>
+            <div class="m-divider from-amber-200 to-yellow-400"></div>
+            <section>
+                <h2>Languages</h2>
+                <p>
+                    ...
+                </p>
+            </section>
+            <div class="m-divider from-amber-200 to-yellow-400"></div>
+            <section>
+                <h2>Hobbies & Interests</h2>
+                <p>
+                    ...
+                </p>
+            </section>
+        </div>
+    </div>
+    <div class="mx-auto w-fit rounded shadow bg-gradient-to-bl from-cyan-400 to-blue-400 p-4 mb-6">
+        <div class="bg-white rounded p-2 shadow prose max-w-none">
+            Last modified: {{ buildDate }}
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
 import Icon from "@/components/Icon.vue"
+
+const buildDate = BUILD_TIMESTAMP
 </script>
 
 <style scoped lang="scss">
