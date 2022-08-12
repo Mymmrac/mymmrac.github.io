@@ -34,8 +34,12 @@
             <div class="m-divider from-amber-200 to-yellow-400"></div>
             <section>
                 <h2>Summery</h2>
-                <p>
-                    ...
+                <p class="px-4 text-justify">
+                    I am mainly a Go developer that really likes open-source and Linux. Creating new and exploring
+                    existing software was always a great opportunity for me to learn something new. Tinkering, hacking,
+                    and configuring are things that I enjoy doing with great passion. Also, for the pet projects, I
+                    often needed some sort of UI, and in some cases, CLI or TUI wasn't enough, so I have some experience
+                    working with web frameworks, too.
                 </p>
             </section>
             <div class="m-divider from-amber-200 to-yellow-400"></div>
