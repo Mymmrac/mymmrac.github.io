@@ -1,4 +1,10 @@
 <template>
+    <!-- TODO: WIP -->
+    <div class="mx-auto w-fit rounded shadow bg-gradient-to-bl from-red-400 to-purple-400 p-4 mt-6">
+        <div class="bg-white rounded p-2 shadow prose max-w-none">
+            WIP: Will be done at some point :)
+        </div>
+    </div>
     <div class="container mx-auto p-4 my-8 rounded shadow bg-gradient-to-bl from-cyan-400 to-blue-400">
         <div class="bg-white rounded p-2 shadow prose max-w-none">
             <section>
